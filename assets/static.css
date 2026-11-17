@@ -1,0 +1,28 @@
+/* Link equivalents retain the original button geometry. Existing CSS is copied unchanged. */
+.desktop-nav > a { height:100%;font-size:.875rem;letter-spacing:.02em;display:flex;align-items:center;gap:6px;position:relative;white-space:nowrap; }
+.desktop-nav > a { min-height:44px; }
+.desktop-nav > a:after { content:'';position:absolute;height:1px;background:var(--accent);bottom:8px;left:0;right:0;transform:scaleX(0);transition:transform .2s; }
+.desktop-nav > a:hover:after,.desktop-nav > a.active:after { transform:scaleX(1); }
+.footer-brand > .wordmark { display:inline-block; }
+.mobile-nav-links > a { display:flex;align-items:center;justify-content:space-between;padding:15px 0;border-bottom:1px solid var(--line);font-size:1.375rem;line-height:1.4;font-family:var(--serif); }
+.search-suggestions a { display:inline-flex;align-items:center;gap:8px;color:var(--accent);font-size:.875rem; }
+.product-image > .image-link { display:block;width:100%;height:100%; }
+.static-variant { display:flex;flex-direction:column;gap:8px;font-size:.875rem;color:var(--muted);margin-top:22px; }
+.static-variant > select { width:100%;padding:12px;border:1px solid var(--line);font-size:1rem; }
+.static-product-link { margin-bottom:22px; }
+.static-product-section { padding:45px 6% 70px;max-width:1440px;margin:auto; }
+.static-product-section > .text-link { margin-bottom:30px; }
+.static-product-layout { display:grid;grid-template-columns:1fr 1fr;background:var(--white); }
+.static-product-layout .detail-image { min-height:650px; }
+.static-product-layout .detail-image img { width:100%;height:100%;object-fit:cover; }
+.static-message > .modal { max-width:720px; }
+.static-message label { display:block;font-size:.875rem;margin:24px 0 8px; }
+.static-message textarea { display:block;width:100%;resize:vertical;min-height:260px;padding:15px;border:1px solid var(--line);font-size:.9375rem;line-height:1.7;white-space:pre-wrap; }
+.static-message .button { margin-top:16px; }
+.static-message .text-link { margin-top:20px; }
+.static-configuration-note { font-size:.875rem!important;background:var(--paper);padding:16px;margin-top:16px; }
+.static-configuration-note a { text-decoration:underline; }
+.static-bag-note { font-size:.875rem;color:var(--muted);margin:14px 0 20px; }
+.static-gallery-note { margin-top:35px; }
+@media(max-width:850px) { .static-product-layout { grid-template-columns:minmax(0,1fr); } .static-product-layout .detail-image { height:470px;min-height:0; } }
+@media(max-width:600px) { .desktop-nav > a { font-size:.875rem;flex-shrink:0; } .static-product-section { padding:25px 0 50px; } .static-product-section > .text-link { margin-left:7%; } .static-product-layout .detail-image { height:390px; } .static-message textarea { font-size:1rem; } }

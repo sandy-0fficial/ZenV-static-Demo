@@ -1,0 +1,271 @@
+/* Readability is source-controlled, not stored in browser/session settings.
+   Keep this layer after styles.css. rem units honour the reader's default size. */
+body { font-size: 1rem; }
+button, input, select, textarea { font-family: var(--sans); }
+h1, h2, h3, h4, p, button, a, label { overflow-wrap: break-word; }
+h2 { font-size: 2.875rem; }
+.wordmark, .footer-brand .wordmark { font-size: 3.6875rem; }
+.wordmark small { font-family: var(--sans); font-size: .75rem; letter-spacing: .12em; line-height: 1.4; margin-top: 12px; padding-left: 0; }
+.button, .button.small, .text-link, .hero-copy .button, .overview-note .button { font-size: .9375rem; min-height: 44px; line-height: 1.5; }
+.button.small { padding: 10px 15px; }
+.eyebrow, .hero-copy .eyebrow, .section-heading .eyebrow, .editorial-copy .eyebrow,
+.social-banner .eyebrow, .shop-intro > .eyebrow, .drawer-heading .eyebrow,
+.detail-copy .eyebrow, .checkout-header .eyebrow, .confirmation-modal .eyebrow,
+.track-modal .eyebrow, .admin-sidebar > .eyebrow, .admin-title .eyebrow,
+.overview-note > .eyebrow, .admin-login .eyebrow, .account-editorial .eyebrow { font-size: .75rem; letter-spacing: .12em; }
+.announcement { font-size: .8125rem; min-height: 36px; height: auto; padding: 8px 16px; line-height: 1.5; text-align: center; flex-wrap: wrap; }
+.header-main { min-height: 110px; height: auto; padding-top: 16px; padding-bottom: 16px; }
+.header-note, .account-button span { font-size: .875rem; }
+.desktop-nav { min-height: 52px; height: auto; flex-wrap: wrap; gap: 12px 28px; padding: 4px 20px; }
+.desktop-nav button { font-size: .875rem; min-height: 44px; }
+.bag-count, .count-dot { font-size: .75rem; }
+.count-dot { min-width: 20px; height: 20px; }
+.hero h1 { font-size: clamp(3.5rem, 6.55vw, 6.5rem); }
+.hero-description, .editorial-copy > p:not(.eyebrow), .showroom-copy > p:not(.eyebrow),
+.shop-intro > p:last-child, .empty-state p, .detail-copy > p:not(.eyebrow),
+.info-modal p:not(.eyebrow), .account-form > p:not(.eyebrow), .account-editorial p:last-child,
+.account-heading p:last-child, .account-empty p, .account-delivery > p:not(.eyebrow),
+.admin-login > p:not(.eyebrow), .overview-note > p:not(.eyebrow) { font-size: 1rem; line-height: 1.75; }
+.hero-description { max-width: 36rem; }
+.hero-footnote, .hero-photo-note, .hero-index, .category-number, .editorial-photo > span,
+.showroom-tag, .footer-top h4, .order-reference span, .admin-label,
+.admin-sidebar-note > span { font-size: .75rem; line-height: 1.6; letter-spacing: .08em; }
+.hero-footnote { flex-wrap: wrap; }
+.hero-photo-link span { font-size: 1.75rem; }
+.values-strip { font-size: .875rem; gap: 20px 48px; padding: 20px 5%; flex-wrap: wrap; }
+.values-strip > span { min-width: 0; }
+.section-heading h2, .showroom-copy h2 { font-size: clamp(2.125rem, 3.3vw, 2.75rem); }
+.handwritten { font-size: 1.25rem; }
+.category-card > span, .product-meta > button { font-size: 1.625rem; line-height: 1.2; }
+.product-badge { font-size: .75rem; padding: 6px 9px; max-width: calc(100% - 58px); line-height: 1.4; letter-spacing: .025em; }
+.category-number { font-size: .75rem; }
+.product-meta > span { font-size: .75rem; }
+.product-price { font-size: 1rem; flex-wrap: wrap; gap: 6px 12px; }
+.product-price s { font-size: .875rem; }
+.quick-add { font-size: .875rem; min-height: 44px; align-items: center; padding: 10px 14px; gap: 8px; }
+.sample-note, .account-form > .sample-note, .showroom-note, .footer-bottom,
+.cart-summary .sample-note, .detail-image > span, .overview-note small,
+.inventory-product small, .order-card-grid small, .tracked-order small { font-size: .8125rem; line-height: 1.75; }
+.editorial h2 { font-size: clamp(2.75rem, 4.2vw, 3.5625rem); }
+.editorial-signature { font-size: 1.75rem; }
+.social-banner h2 { font-size: 2.125rem; }
+.social-banner .text-link, .editorial-copy .text-link, .showroom-copy .button,
+.section-heading .text-link, .account-help .text-link, .account-orders > .text-link,
+.account-heading .text-link { font-size: .9375rem; }
+.footer-brand p, .footer-top > div:not(:first-child) > button,
+.footer-top > div:not(:first-child) > a { font-size: .875rem; line-height: 1.7; }
+.footer-top > div:not(:first-child) > button, .footer-top > div:not(:first-child) > a { min-height: 44px; margin: 4px 0; }
+.footer-bottom { align-items: flex-start; flex-wrap: wrap; }
+.shop-intro h1 { font-size: clamp(3rem, 6vw, 4.5rem); }
+.category-filters button { font-size: .875rem; min-height: 44px; }
+.search-field > input, .search-modal .search-field input, .sort-field > select,
+.sort-field select, label > input:not([type=file]), label > select, label > textarea,
+.form-grid input, .password-field > input, .coupon-row > input, td > input,
+.bridge-form textarea, .file-upload input { font-size: 1rem; min-height: 44px; }
+.sort-field > select { max-width: 100%; }
+.search-field { min-height: 44px; }
+label, .form-grid label { font-size: .875rem; line-height: 1.5; }
+.results-count { font-size: .875rem; gap: 16px; }
+.results-count > span, .search-suggestions button { font-size: .8125rem; }
+.search-suggestions { flex-wrap: wrap; }
+.search-suggestions button { min-height: 44px; }
+.empty-state h3 { font-size: 1.875rem; }
+.drawer-heading h2 { font-size: 2.4375rem; }
+.drawer-heading h2 sup { font-family: var(--sans); font-size: 1rem; }
+.mobile-nav-links > button { font-size: 1.75rem; min-height: 48px; }
+.toast { font-size: .9375rem; }
+.toast > svg { flex-shrink: 0; }
+.info-modal h2, .detail-copy h2 { font-size: 2.6875rem; }
+.detail-price { font-size: 1.25rem; }
+.detail-price s { font-size: 1rem; }
+.stock-note { font-size: .875rem; }
+.quantity-control, .cart-item .quantity-control { height: 44px; }
+.quantity-control > button, .detail-actions .quantity-control > button { width: 44px; }
+.quantity-control > span, .detail-actions .quantity-control > span { font-size: .9375rem; width: 30px; }
+.detail-actions { flex-wrap: wrap; }
+.detail-actions .button { font-size: .9375rem; min-width: 155px; }
+.detail-heart { width: 44px; min-height: 44px; }
+.detail-copy details, .detail-copy details ul, .detail-copy details p { font-size: .9375rem; }
+.detail-copy details small { font-size: .8125rem; }
+.detail-copy summary { min-height: 44px; align-items: center; gap: 12px; }
+.search-modal h2 { font-size: 3rem; }
+.cart-items { min-height: 100px; }
+.cart-item { grid-template-columns: 73px minmax(0, 1fr) 32px; gap: 12px; }
+.cart-item .eyebrow { font-size: .75rem; }
+.cart-item h3 { font-size: 1.5rem; }
+.cart-item p { font-size: .9375rem; }
+.shipping-progress p, .coupon-success, .coupon-success button { font-size: .8125rem; }
+.coupon-row { height: auto; min-height: 46px; }
+.coupon-row > button { font-size: .875rem; min-width: 60px; }
+.total-row, .cart-summary .total-row { font-size: .9375rem; gap: 12px; }
+.grand-total, .cart-summary .grand-total { font-size: 1.125rem; }
+.checkout-header h2 { font-size: 3.1875rem; }
+.demo-banner, .payment-option p, .checkout-item small, .back-to-bag,
+.tracked-order p { font-size: .875rem; }
+.checkout-grid h3 { font-size: 1.75rem; }
+.payment-option strong { font-size: .9375rem; }
+.checkout-item { font-size: .9375rem; }
+.checkout-summary .button { font-size: .9375rem; flex-wrap: wrap; }
+.back-to-bag { min-height: 44px; max-width: 100%; }
+.error { font-size: .9375rem !important; }
+.confirmation-modal h2 { font-size: 3.25rem; }
+.confirmation-modal p:not(.eyebrow) { font-size: 1rem; }
+.order-reference strong { font-size: 1.125rem; }
+.track-modal h2 { font-size: 2.9375rem; }
+.tracked-order > div { font-size: 1rem; flex-wrap: wrap; }
+.status-pill { font-size: .75rem; }
+.admin-header .wordmark { font-size: 3rem; }
+.admin-header .text-link { font-size: .875rem; }
+.admin-login h1 { font-size: 3.9375rem; }
+.admin-title h1 { font-size: 3.125rem; }
+.admin-sidebar > button { font-size: .9375rem; min-height: 44px; }
+.stats-grid span { font-size: .875rem; }
+.stats-grid strong { font-size: 2.75rem; }
+.admin-card h3 { font-size: 1.75rem; }
+.admin-card > p, .admin-card-title p, .recent-order, table,
+.inventory-product strong, .alert, .order-card-grid, .bridge-notes { font-size: .9375rem; }
+th { font-size: .8125rem; }
+td code, .recent-order small, .order-card-heading p,
+.csv-help p, .bridge-warning p, .danger { font-size: .8125rem; }
+.recent-order > span:first-child, .recent-order > strong { font-size: .9375rem; }
+.recent-order > span:first-child { overflow-wrap: anywhere; min-width: 0; }
+.inventory-product { min-width: 235px; }
+td > input { width: 105px; }
+.order-card-heading h3 { font-family: var(--sans); font-size: 1rem; overflow-wrap: anywhere; }
+.order-card-heading > strong, .bridge-warning strong { font-size: 1rem; }
+.csv-help code { font-size: .875rem; overflow-wrap: anywhere; }
+.file-upload input { max-width: 100%; }
+.account-editorial h1 { font-size: clamp(2.75rem, 4.6vw, 4.0625rem); }
+.account-form h2 { font-size: clamp(2.5rem, 4vw, 3.3125rem); }
+.auth-tabs button { font-size: .9375rem; min-height: 48px; }
+.auth-hint { font-size: .875rem; line-height: 1.75; }
+.account-heading h1 { font-size: clamp(3rem, 5vw, 4.25rem); }
+.account-section-heading h2, .account-delivery h2 { font-size: 2.375rem; }
+.account-empty h3 { font-size: 1.875rem; }
+.customer-order > div:first-child, .customer-order-item { font-size: .9375rem; }
+.customer-order-id, .customer-order-item small { font-size: .8125rem; }
+.account-auth > *, .account-dashboard-grid > *, .checkout-grid > *, .form-grid > *,
+.hero-copy, .editorial-copy, .showroom-copy, .footer-top > * { min-width: 0; }
+
+@media (max-width: 1100px) {
+  .header-note { max-width: 180px; }
+  .header-actions { gap: 4px; }
+  .desktop-break { display: none; }
+  .hero-copy { padding: 60px 9%; }
+  .hero h1 { font-size: clamp(3.125rem, 6.5vw, 5rem); }
+  .hero-description { max-width: 30rem; }
+  .category-grid { gap: 15px; }
+  .category-card > span, .product-meta > button { font-size: 1.5rem; }
+  .product-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .admin-layout { grid-template-columns: 190px minmax(0, 1fr); }
+  .admin-header { min-height: 85px; height: auto; padding-top: 14px; padding-bottom: 14px; flex-wrap: wrap; }
+}
+@media (max-width: 850px) {
+  .header-main { min-height: 100px; }
+  .category-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px 16px; }
+  .category-card > div { height: 200px; }
+  .product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .product-image { padding-bottom: 44px; }
+  .quick-add { transform: none; }
+  .favorite-button { width: 44px; height: 44px; }
+  .checkout-grid, .account-dashboard-grid { grid-template-columns: minmax(0, 1fr); }
+  .account-auth { grid-template-columns: minmax(0, 1fr); }
+  .account-editorial { min-height: 360px; }
+  .account-form { max-width: 620px; width: 100%; padding: 45px 7%; justify-self: center; }
+  .account-delivery { width: 100%; }
+  .account-editorial > div { bottom: 35px; }
+  .shop-controls { flex-wrap: wrap; }
+  .sort-field { margin-left: auto; max-width: 100%; }
+  .social-banner { flex-wrap: wrap; }
+  .social-banner .text-link { margin-left: 0; }
+  .admin-layout { grid-template-columns: minmax(0, 1fr); }
+  .admin-sidebar { min-height: 0; display: flex; overflow-x: auto; border-right: 0; border-bottom: 1px solid var(--line); padding: 12px 16px; gap: 8px; }
+  .admin-sidebar > .eyebrow, .admin-sidebar-note { display: none; }
+  .admin-sidebar > button { width: auto; flex-shrink: 0; margin: 0; }
+  .order-card-grid { grid-template-columns: minmax(0, 1fr); }
+  .admin-card-title, .order-card-heading { flex-wrap: wrap; }
+}
+@media (max-width: 600px) {
+  .header-main { grid-template-columns: 44px minmax(0, 1fr) 44px; gap: 8px; padding: 12px 16px 6px; }
+  .header-main .wordmark { grid-column: 2; justify-self: center; margin: 0; font-size: 3.125rem; }
+  .header-main .wordmark small { font-size: .75rem; max-width: 200px; margin-top: 10px; }
+  .mobile-menu-trigger { width: 44px; height: 44px; }
+  .header-actions { grid-column: 1 / -1; justify-content: space-between; width: 100%; gap: 8px; padding-top: 5px; }
+  .header-actions .icon-button, .header-actions .account-button,
+  .header-actions .theme-toggle, .header-actions .bag-button { width: 44px; height: 44px; padding: 0; }
+  .header-actions svg { width: 21px; height: 21px; }
+  .header-actions .bag-button { width: 58px; }
+  .header-actions .account-button { border-radius: 50%; }
+  .desktop-nav { flex-wrap: nowrap; min-height: 50px; gap: 24px; padding: 2px 20px; }
+  .desktop-nav button { font-size: .875rem; }
+  .hero-copy { padding: 42px 7%; }
+  .hero h1 { font-size: clamp(2.875rem, 12vw, 4.25rem); margin: 24px 0; }
+  .hero-copy .button { font-size: .9375rem; padding: 14px 20px; min-width: 0; gap: 24px; max-width: 100%; }
+  .hero-description { max-width: none; }
+  .hero-footnote { margin-top: 28px; gap: 10px; }
+  .hero-photo-note { gap: 16px; align-items: flex-start; }
+  .values-strip { gap: 16px; padding: 20px 6%; justify-content: space-between; }
+  .values-strip > span { max-width: 100%; }
+  .section { padding-left: 6%; padding-right: 6%; }
+  .category-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .category-card:last-child { grid-column: 1 / -1; }
+  .product-grid { gap: 28px 14px; }
+  .product-meta > button { font-size: 1.5rem; }
+  .product-badge { left: 7px; top: 10px; max-width: calc(100% - 58px); padding: 5px 6px; }
+  .quick-add { font-size: .875rem; padding: 10px 9px; }
+  .footer-brand .wordmark { font-size: 3.125rem; }
+  .footer-top { gap: 28px 18px; }
+  .footer-top > div:last-child { gap: 8px 20px; }
+  .footer-bottom > span:last-child { letter-spacing: .025em; flex-wrap: wrap; }
+  .results-count { flex-wrap: wrap; }
+  .shop-intro { padding-left: 7%; padding-right: 7%; }
+  .shop-intro > p:last-child { max-width: none; }
+  .search-field { max-width: 100%; }
+  .sort-field > select { width: auto; }
+  .drawer-heading { padding: 50px 24px 22px; }
+  .modal-close { width: 44px; height: 44px; }
+  .detail-copy { padding: 30px 24px; }
+  .detail-copy h2 { font-size: 2.5rem; }
+  .detail-actions { flex-wrap: wrap; justify-content: space-between; }
+  .detail-actions .button { order: 3; flex-basis: 100%; }
+  .detail-actions .quantity-control { height: 48px; }
+  .cart-items, .cart-summary { padding-left: 20px; padding-right: 20px; }
+  .cart-item > .icon-button { width: 32px; height: 44px; }
+  .cart-item .quantity-control > button { width: 36px; }
+  .cart-summary .full-width { min-height: 48px; }
+  .checkout-modal > .modal { padding: 50px 20px 25px; }
+  .checkout-header h2, .confirmation-modal h2 { font-size: 2.75rem; }
+  .checkout-summary { padding: 20px; }
+  .form-grid { grid-template-columns: minmax(0, 1fr); }
+  .search-modal h2 { font-size: 2.625rem; }
+  .track-modal h2 { font-size: 2.5rem; }
+  .search-suggestions { gap: 10px 18px; }
+  .toast { font-size: .875rem; width: max-content; }
+  .admin-header { padding: 14px 20px; gap: 16px; }
+  .admin-label { max-width: none; }
+  .admin-header > div { flex-basis: 100%; justify-content: space-between; margin: 0; }
+  .admin-header .icon-button { width: 44px; height: 44px; }
+  .admin-title h1 { font-size: 2.5rem; }
+  .admin-login h1 { font-size: 3.25rem; }
+  .stats-grid { gap: 12px; }
+  .stats-grid strong { font-size: 2.25rem; }
+  .admin-main { padding-left: 16px; padding-right: 16px; }
+  .admin-card { padding: 20px 16px; }
+  .bridge-warning { flex-wrap: wrap; }
+  .bridge-form { grid-template-columns: minmax(0, 1fr); }
+  .account-editorial { min-height: 320px; }
+  .account-editorial h1 { font-size: 2.75rem; }
+  .account-form { padding: 40px 7%; }
+  .account-form h2 { font-size: 2.75rem; }
+  .account-heading h1 { font-size: 3rem; }
+  .account-section-heading h2, .account-delivery h2 { font-size: 2.125rem; }
+  .account-delivery, .account-empty { padding: 25px 20px; }
+  .customer-order { padding: 20px 16px; }
+  .customer-order-item { flex-wrap: wrap; }
+  .customer-order-item > span { min-width: 100px; }
+}
+/* A landscape/zoomed viewport must scroll, never hide checkout/bag controls. */
+@media (max-height: 650px) {
+  .cart-drawer > .modal { display: block; overflow-y: auto; }
+  .cart-items { overflow: visible; }
+}
